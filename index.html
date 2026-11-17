@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxhind: Projects</title>
+<meta name="description" content="Open-source projects by Foxhind, including MacDroidFS, a free macOS app that mounts Android phones as folders in Finder.">
+<link rel="canonical" href="https://foxhind.github.io/">
+<link rel="icon" type="image/png" href="/macdroidfs/assets/favicon.png">
+<style>
+:root {
+  --bg: #f5f5f7;
+  --surface: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5f6368;
+  --line: #d9dbe0;
+  --accent: #2f74ee;
+  --radius: 18px;
+  --max: 1080px;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111214; --surface: #1c1d20; --text: #f2f2f4; --muted: #a1a4ab; --line: #2e3035; --accent: #4b8cff;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111214; --surface: #1c1d20; --text: #f2f2f4; --muted: #a1a4ab; --line: #2e3035; --accent: #4b8cff;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 var(--font); -webkit-font-smoothing: antialiased; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+.wrap { max-width: var(--max); margin: 0 auto; padding: 72px 16px; }
+h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 12px; }
+.intro { color: var(--muted); margin: 0 0 36px; }
+.card { display: flex; gap: 20px; align-items: center; max-width: 640px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; color: var(--text); }
+.card:hover { text-decoration: none; border-color: var(--accent); }
+.card img { width: 72px; height: 72px; flex: none; }
+.card h2 { font-size: 19px; margin: 0 0 6px; }
+.card p { margin: 0; color: var(--muted); font-size: 16px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Foxhind</h1>
+  <p class="intro">Open-source projects. Source code is on <a href="https://github.com/Foxhind">GitHub</a>.</p>
+  <a class="card" href="/macdroidfs/">
+    <img src="/macdroidfs/assets/icon.png" alt="" width="72" height="72">
+    <div>
+      <h2>MacDroidFS</h2>
+      <p>Mount your Android phone on your Mac: browse, copy and edit Android files in Finder over USB or Wi-Fi.</p>
+    </div>
+  </a>
+</main>
+</body>
+</html>
